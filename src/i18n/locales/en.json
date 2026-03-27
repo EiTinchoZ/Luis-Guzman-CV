@@ -1,0 +1,127 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Profile",
+    "skills": "Skills",
+    "experience": "Experience",
+    "services": "Services",
+    "methodology": "Method",
+    "clients": "Clients",
+    "education": "Education",
+    "fees": "Rates",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Senior Technical Consultant",
+    "title": "Specialist in aluminum can manufacturing",
+    "subtitle": "27+ years operating, maintaining, and improving processes inside world-class plants.",
+    "cta": "Hire service",
+    "ctaSecondary": "View services",
+    "badge": "Available for technical visits"
+  },
+  "about": {
+    "title": "Professional Profile",
+    "subtitle": "Direct plant experience combined with technical support and commercial judgment for LATAM operations.",
+    "currentRole": "Current role",
+    "location": "Location",
+    "availability": "Availability",
+    "availabilityValue": "Available for projects, visits, and remote follow-up",
+    "languages": "Languages",
+    "languagesValue": "Spanish native | Basic English | Working Portuguese",
+    "highlights": {
+      "experienceLabel": "in manufacturing",
+      "specialization": "Specialist",
+      "specializationLabel": "aluminum cans",
+      "network": "LATAM network",
+      "networkLabel": "industry contacts",
+      "availability": "Available",
+      "availabilityLabel": "for plant support"
+    }
+  },
+  "skills": {
+    "title": "Technical Competencies",
+    "subtitle": "Tools, technical judgment, and operating knowledge to get to the right issue quickly.",
+    "technical": "Technical",
+    "equipment": "Diagnostics",
+    "software": "Systems",
+    "softSkills": "Operations"
+  },
+  "experience": {
+    "title": "Professional Track Record",
+    "subtitle": "Operational, quality, maintenance, and commercial-development roles across the metal packaging ecosystem."
+  },
+  "services": {
+    "title": "Services Offered",
+    "subtitle": "Specialized technical assistance shaped by the actual plant condition, the equipment, and the business objective.",
+    "eyebrow": "Service Portfolio",
+    "cta": "Check availability"
+  },
+  "methodology": {
+    "title": "Working Method",
+    "subtitle": "A clear process that turns a technical visit into useful operating decisions.",
+    "eyebrow": "Method"
+  },
+  "clients": {
+    "title": "Clients and Field Experience",
+    "subtitle": "Direct relationships with plants, industrial groups, and technical operations across multiple LATAM markets.",
+    "eyebrow": "Regional Experience",
+    "company": "Company",
+    "country": "Country",
+    "relationship": "Relationship",
+    "events": "International events"
+  },
+  "education": {
+    "title": "Education",
+    "subtitle": "Technical and academic foundation focused on operations, maintenance, and manufacturing.",
+    "eyebrow": "Education"
+  },
+  "fees": {
+    "title": "Rate Structure",
+    "subtitle": "Specialized technical consulting services. Travel and lodging can be quoted separately when needed.",
+    "eyebrow": "Rates 2026",
+    "type": "Mode",
+    "duration": "Duration",
+    "rate": "Rate",
+    "includes": "Includes",
+    "note": "Preferential conditions can be defined for multi-day projects or recurring relationships.",
+    "cta": "Request a quote"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Available for virtual meetings, site visits, and initial diagnostic conversations.",
+    "eyebrow": "Contact",
+    "email": "Email",
+    "phone": "Phone / WhatsApp",
+    "location": "Location",
+    "availability": "Available",
+    "availabilityValue": "Direct response for technical and commercial inquiries",
+    "formName": "Full name",
+    "formEmail": "Email address",
+    "formCompany": "Company / Plant",
+    "formMessage": "Describe the service or technical issue",
+    "formSend": "Send message",
+    "whatsapp": "Message on WhatsApp"
+  },
+  "chat": {
+    "title": "Luis Assistant",
+    "subtitle": "Quick answers about experience, services, and availability",
+    "placeholder": "Ask a question about Luis",
+    "send": "Send",
+    "thinking": "Writing...",
+    "welcome": "I am the assistant for Luis Guzman's portfolio. I can help with services, experience, methodology, and rates.",
+    "error": "I could not answer right now. Please try again or contact Luis directly.",
+    "suggestedLabel": "Suggested questions",
+    "suggestedQuestions": [
+      "What kind of plants does Luis support?",
+      "What is his maintenance background?",
+      "How does a technical visit work?",
+      "What are his rates?"
+    ]
+  },
+  "footer": {
+    "tagline": "Senior technical consultant for the metal packaging industry",
+    "rights": "All rights reserved.",
+    "navigation": "Navigation",
+    "connect": "Contact"
+  }
+}

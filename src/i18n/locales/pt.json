@@ -1,0 +1,127 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Perfil",
+    "skills": "Competencias",
+    "experience": "Experiencia",
+    "services": "Servicos",
+    "methodology": "Metodo",
+    "clients": "Clientes",
+    "education": "Formacao",
+    "fees": "Tarifas",
+    "contact": "Contato"
+  },
+  "hero": {
+    "eyebrow": "Consultor Tecnico Senior",
+    "title": "Especialista em fabricacao de latas de aluminio",
+    "subtitle": "27+ anos operando, mantendo e melhorando processos em plantas de classe mundial.",
+    "cta": "Contratar servico",
+    "ctaSecondary": "Ver servicos",
+    "badge": "Disponivel para visitas tecnicas"
+  },
+  "about": {
+    "title": "Perfil Profissional",
+    "subtitle": "Experiencia real de planta combinada com suporte tecnico e criterio comercial para operacoes LATAM.",
+    "currentRole": "Cargo atual",
+    "location": "Localizacao",
+    "availability": "Disponibilidade",
+    "availabilityValue": "Disponivel para projetos, visitas e acompanhamento remoto",
+    "languages": "Idiomas",
+    "languagesValue": "Espanhol nativo | Ingles basico | Portugues funcional",
+    "highlights": {
+      "experienceLabel": "em manufatura",
+      "specialization": "Especialista",
+      "specializationLabel": "latas aluminio",
+      "network": "Rede LATAM",
+      "networkLabel": "contatos da industria",
+      "availability": "Disponivel",
+      "availabilityLabel": "para planta"
+    }
+  },
+  "skills": {
+    "title": "Competencias Tecnicas",
+    "subtitle": "Ferramentas, criterio tecnico e conhecimento operacional para chegar rapido ao problema certo.",
+    "technical": "Tecnicas",
+    "equipment": "Diagnostico",
+    "software": "Sistemas",
+    "softSkills": "Operacao"
+  },
+  "experience": {
+    "title": "Trajetoria Profissional",
+    "subtitle": "Funcoes operacionais, de qualidade, manutencao e desenvolvimento comercial dentro do metal packaging."
+  },
+  "services": {
+    "title": "Servicos Oferecidos",
+    "subtitle": "Assistencia tecnica especializada conforme a condicao real da planta, do equipamento e do objetivo do cliente.",
+    "eyebrow": "Portifolio de Servicos",
+    "cta": "Consultar disponibilidade"
+  },
+  "methodology": {
+    "title": "Metodo de Trabalho",
+    "subtitle": "Um processo claro para transformar a visita tecnica em decisoes operacionais uteis.",
+    "eyebrow": "Metodo"
+  },
+  "clients": {
+    "title": "Clientes e Experiencia de Campo",
+    "subtitle": "Relacao direta com plantas, grupos industriais e operacoes tecnicas em varios mercados da LATAM.",
+    "eyebrow": "Experiencia Regional",
+    "company": "Empresa",
+    "country": "Pais",
+    "relationship": "Relacao",
+    "events": "Eventos internacionais"
+  },
+  "education": {
+    "title": "Formacao",
+    "subtitle": "Base tecnica e academica focada em operacao, manutencao e manufatura.",
+    "eyebrow": "Formacao"
+  },
+  "fees": {
+    "title": "Estrutura de Tarifas",
+    "subtitle": "Servicos de consultoria tecnica especializada. Viagens e hospedagem podem ser orcadas separadamente quando necessario.",
+    "eyebrow": "Tarifas 2026",
+    "type": "Modalidade",
+    "duration": "Duracao",
+    "rate": "Tarifa",
+    "includes": "Inclui",
+    "note": "Condicoes preferenciais podem ser definidas para projetos de varios dias ou relacoes recorrentes.",
+    "cta": "Solicitar orcamento"
+  },
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Disponivel para reunioes virtuais, visitas tecnicas e conversas iniciais de diagnostico.",
+    "eyebrow": "Contato",
+    "email": "Email",
+    "phone": "Telefone / WhatsApp",
+    "location": "Localizacao",
+    "availability": "Disponivel",
+    "availabilityValue": "Resposta direta para consultas tecnicas e comerciais",
+    "formName": "Nome completo",
+    "formEmail": "Endereco de email",
+    "formCompany": "Empresa / Planta",
+    "formMessage": "Descreva o servico ou problema tecnico",
+    "formSend": "Enviar mensagem",
+    "whatsapp": "Escrever por WhatsApp"
+  },
+  "chat": {
+    "title": "Assistente do Luis",
+    "subtitle": "Respostas rapidas sobre experiencia, servicos e disponibilidade",
+    "placeholder": "Faca uma pergunta sobre Luis",
+    "send": "Enviar",
+    "thinking": "Escrevendo...",
+    "welcome": "Sou o assistente do portfolio de Luis Guzman. Posso ajudar com servicos, experiencia, metodo e tarifas.",
+    "error": "Nao consegui responder agora. Tente novamente ou entre em contato direto com Luis.",
+    "suggestedLabel": "Perguntas sugeridas",
+    "suggestedQuestions": [
+      "Que tipo de plantas Luis atende?",
+      "Qual e sua experiencia em manutencao?",
+      "Como funciona uma visita tecnica?",
+      "Quais sao suas tarifas?"
+    ]
+  },
+  "footer": {
+    "tagline": "Consultor tecnico senior para a industria de embalagens metalicas",
+    "rights": "Todos os direitos reservados.",
+    "navigation": "Navegacao",
+    "connect": "Contato"
+  }
+}
