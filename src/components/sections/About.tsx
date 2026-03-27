@@ -48,6 +48,30 @@ export function About() {
     },
   ];
 
+  const sideCopy = {
+    es: {
+      dossier: 'Ficha operativa',
+      fieldNotes: 'Notas de campo',
+      lines: ['Metal packaging', 'Diagn\u00f3stico de proceso', 'Tooling y mantenimiento', 'Cobertura LATAM'],
+      note:
+        'Perfil construido desde planta, no desde teor\u00eda. La propuesta combina criterio t\u00e9cnico, lectura de operaci\u00f3n y acompa\u00f1amiento comercial cre\u00edble.',
+    },
+    en: {
+      dossier: 'Operating profile',
+      fieldNotes: 'Field notes',
+      lines: ['Metal packaging', 'Process diagnostics', 'Tooling and maintenance', 'LATAM coverage'],
+      note:
+        'This profile was built on the plant floor, not in theory. The value combines technical judgment, operational reading, and credible commercial support.',
+    },
+    pt: {
+      dossier: 'Ficha operacional',
+      fieldNotes: 'Notas de campo',
+      lines: ['Metal packaging', 'Diagn\u00f3stico de processo', 'Ferramental e manuten\u00e7\u00e3o', 'Cobertura LATAM'],
+      note:
+        'Este perfil foi constru\u00eddo em planta, n\u00e3o na teoria. A proposta combina crit\u00e9rio t\u00e9cnico, leitura operacional e suporte comercial confi\u00e1vel.',
+    },
+  }[language as LanguageCode];
+
   return (
     <section id="about" className="bg-transparent px-6 py-28 md:px-16">
       <div className="section-wash" />
@@ -71,22 +95,58 @@ export function About() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
-          <motion.div
-            initial={{ opacity: 0, x: -24 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: '-60px' }}
-            transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col gap-8"
-          >
-            <p
-              className="text-base leading-[1.85] text-white/75"
-              style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1.15fr)_380px]">
+          <div className="grid gap-8">
+            <motion.div
+              initial={{ opacity: 0, x: -24 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: '-60px' }}
+              transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+              className="dossier-panel p-8"
             >
-              {cv.profile}
-            </p>
+              <div className="technical-grid" />
+              <div className="relative z-10 grid gap-6 lg:grid-cols-[minmax(0,1fr)_220px]">
+                <div>
+                  <p className="spec-label">{sideCopy.dossier}</p>
+                  <p
+                    className="mt-5 text-base leading-[1.9] text-white/78"
+                    style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
+                  >
+                    {cv.profile}
+                  </p>
+                </div>
 
-            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                <div className="rounded-[1.6rem] border border-white/10 bg-[#0f141c]/80 p-5">
+                  <p className="spec-label">{sideCopy.fieldNotes}</p>
+                  <div className="steel-rule mt-4" />
+                  <div className="mt-4 space-y-3">
+                    {sideCopy.lines.map((line) => (
+                      <p
+                        key={line}
+                        className="text-sm leading-relaxed text-white/78"
+                        style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
+                      >
+                        {line}
+                      </p>
+                    ))}
+                  </div>
+                  <p
+                    className="mt-6 text-sm leading-relaxed text-white/62"
+                    style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
+                  >
+                    {sideCopy.note}
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: -18 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: '-60px' }}
+              transition={{ duration: 0.8, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
+              className="grid grid-cols-1 gap-3 sm:grid-cols-2"
+            >
               {[
                 {
                   icon: Briefcase,
@@ -100,23 +160,18 @@ export function About() {
                 <div key={label} className="liquid-glass rounded-xl p-4">
                   <div className="mb-1 flex items-center gap-2">
                     <Icon className="h-3.5 w-3.5 text-primary" />
-                    <span
-                      className="text-[10px] uppercase tracking-widest text-white/35"
-                      style={{ fontFamily: 'var(--font-geist-mono), monospace' }}
-                    >
-                      {label}
-                    </span>
+                    <span className="spec-label">{label}</span>
                   </div>
                   <p
-                    className="text-sm leading-snug text-white/80"
+                    className="text-sm leading-snug text-white/82"
                     style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
                   >
                     {value}
                   </p>
                 </div>
               ))}
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
 
           <motion.div
             initial={{ opacity: 0, x: 24 }}
@@ -125,7 +180,7 @@ export function About() {
             transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-col gap-6"
           >
-            <div className="liquid-glass-strong rounded-2xl p-8">
+            <div className="liquid-glass-strong rounded-[2rem] p-8">
               <div
                 className="mb-3 select-none text-8xl leading-none text-primary/20"
                 style={{ fontFamily: 'var(--font-instrument), serif' }}
@@ -148,15 +203,15 @@ export function About() {
 
             <div className="grid grid-cols-2 gap-3">
               {highlightCards.map((item) => (
-                <div key={item.label} className="liquid-glass rounded-xl p-4 text-center">
+                <div key={item.label} className="liquid-glass rounded-xl p-5 text-left">
                   <div
-                    className="text-2xl leading-none text-primary"
+                    className="text-3xl leading-none text-primary"
                     style={{ fontFamily: 'var(--font-instrument), serif', fontStyle: 'italic' }}
                   >
                     {item.value}
                   </div>
                   <div
-                    className="mt-1 text-xs text-white/64"
+                    className="mt-2 text-xs leading-relaxed text-white/64"
                     style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
                   >
                     {item.label}
@@ -165,7 +220,7 @@ export function About() {
               ))}
             </div>
 
-            <div className="liquid-glass-gold flex items-start gap-4 rounded-xl p-5">
+            <div className="liquid-glass-gold flex items-start gap-4 rounded-[1.6rem] p-5">
               <div
                 className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full"
                 style={{ backgroundColor: 'oklch(0.720 0.130 73 / 15%)' }}
@@ -173,20 +228,17 @@ export function About() {
                 <Briefcase className="h-4 w-4 text-primary" />
               </div>
               <div>
-                <p
-                  className="mb-1 text-xs uppercase tracking-widest text-primary"
-                  style={{ fontFamily: 'var(--font-geist-mono), monospace' }}
-                >
+                <p className="spec-label" style={{ color: 'oklch(0.79 0.12 79)' }}>
                   {t('about.currentRole')}
                 </p>
                 <p
-                  className="text-sm font-semibold text-white/90"
+                  className="mt-2 text-sm font-semibold text-white/92"
                   style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
                 >
                   {luisData.personal.currentRole}
                 </p>
                 <p
-                  className="mt-0.5 text-xs text-white/68"
+                  className="mt-1 text-xs text-white/70"
                   style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
                 >
                   {luisData.personal.currentCompany}

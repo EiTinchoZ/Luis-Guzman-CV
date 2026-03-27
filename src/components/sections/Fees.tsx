@@ -2,9 +2,8 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-import { useLanguage } from '@/i18n';
 import { luisData } from '@/data/cv-data';
-import type { LanguageCode } from '@/i18n';
+import { useLanguage, type LanguageCode } from '@/i18n';
 
 function BackgroundVideo({
   className,
@@ -21,117 +20,137 @@ export function Fees() {
   const cv = luisData.cv[language as LanguageCode];
   const fees = cv?.fees ?? [];
 
+  const copy = {
+    es: {
+      preface:
+        'La tarifa está pensada como intervención especializada. No compite por volumen: compite por criterio, velocidad de lectura técnica y capacidad de destrabar decisiones operativas.',
+      featured: 'Recomendado para visita completa',
+    },
+    en: {
+      preface:
+        'The rate structure is designed for specialized intervention. It does not compete on volume; it competes on judgment, speed of technical reading, and the ability to unblock operating decisions.',
+      featured: 'Recommended for full-visit scope',
+    },
+    pt: {
+      preface:
+        'A estrutura de tarifas foi pensada para intervenção especializada. Ela não compete por volume; compete por critério, velocidade de leitura técnica e capacidade de destravar decisões operacionais.',
+      featured: 'Recomendado para visita completa',
+    },
+  }[language as LanguageCode];
+
   return (
     <section id="fees" className="relative overflow-hidden bg-transparent px-6 py-28 md:px-16">
       <div className="section-wash" />
-      {/* CTA video bg */}
-      <BackgroundVideo
-        className="absolute inset-0 w-full h-full object-cover z-0"
-        style={{ opacity: 0.13 }}
-      />
+      <BackgroundVideo className="absolute inset-0 z-0 h-full w-full object-cover" style={{ opacity: 0.1 }} />
       <div className="video-fade-top" />
       <div className="video-fade-bottom" />
 
-      <div className="relative z-10 max-w-5xl mx-auto">
+      <div className="relative z-10 mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="text-center mb-16"
+          className="grid gap-8 border-b border-white/10 pb-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]"
         >
-          <span className="badge-pill">{t('fees.eyebrow')}</span>
-          <h2
-            className="text-4xl md:text-5xl lg:text-6xl text-white mt-4 tracking-tight leading-[0.9]"
-            style={{ fontFamily: 'var(--font-instrument), serif', fontStyle: 'italic' }}
+          <div>
+            <span className="badge-pill">{t('fees.eyebrow')}</span>
+            <h2
+              className="mt-4 text-4xl leading-[0.9] tracking-tight text-white md:text-5xl lg:text-6xl"
+              style={{ fontFamily: 'var(--font-instrument), serif', fontStyle: 'italic' }}
+            >
+              {t('fees.title')}
+            </h2>
+          </div>
+          <p
+            className="max-w-2xl text-base leading-relaxed text-white/72 lg:pt-8"
+            style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
           >
-            {t('fees.title')}
-          </h2>
-          <p className="text-white/68 mt-4 max-w-2xl mx-auto text-base" style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}>
-            {t('fees.subtitle')}
+            {t('fees.subtitle')} {copy.preface}
           </p>
         </motion.div>
 
-        {/* Pricing cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-          {fees.map((fee, i) => {
-            const isFeatured = i === 2; // Full day is featured
+        <div className="mt-10 grid gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_minmax(0,1.15fr)]">
+          {fees.map((fee, index) => {
+            const isFeatured = index === 2;
             return (
-              <motion.div
-                key={i}
+              <motion.article
+                key={fee.type}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-60px' }}
-                transition={{ duration: 0.7, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
-                className={`hover-card rounded-2xl p-8 text-center ${
-                  isFeatured
-                    ? 'liquid-glass-strong ring-1'
-                    : 'liquid-glass'
+                transition={{ duration: 0.7, delay: index * 0.08, ease: [0.16, 1, 0.3, 1] }}
+                className={`relative overflow-hidden rounded-[2rem] px-6 py-7 ${
+                  isFeatured ? 'liquid-glass-gold' : 'liquid-glass'
                 }`}
-                style={isFeatured ? { ['--tw-ring-color' as string]: 'oklch(0.720 0.130 73 / 40%)' } : {}}
               >
-                {/* Type */}
-                <p
-                  className="text-xs tracking-[0.3em] uppercase mb-4"
-                  style={{ color: 'oklch(0.720 0.130 73)', fontFamily: 'var(--font-geist-mono), monospace' }}
-                >
+                <p className="spec-label" style={isFeatured ? { color: 'oklch(0.79 0.12 79)' } : undefined}>
                   {fee.type}
                 </p>
 
-                {/* Rate */}
+                {isFeatured && (
+                  <p
+                    className="mt-3 text-xs uppercase tracking-[0.18em] text-white/78"
+                    style={{ fontFamily: 'var(--font-geist-mono), monospace' }}
+                  >
+                    {copy.featured}
+                  </p>
+                )}
+
                 <p
-                  className="text-5xl text-white leading-none"
+                  className="mt-6 text-5xl leading-none text-white"
                   style={{ fontFamily: 'var(--font-instrument), serif', fontStyle: 'italic' }}
                 >
                   {fee.rate.split(' ')[0]}
                 </p>
-                <p className="text-white/30 text-xs mt-1" style={{ fontFamily: 'var(--font-geist-mono), monospace' }}>
+                <p className="mt-1 text-xs text-white/38" style={{ fontFamily: 'var(--font-geist-mono), monospace' }}>
                   USD
                 </p>
 
-                {/* Duration */}
-                <p className="text-white/68 text-sm mt-3" style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}>
+                <div className="steel-rule mt-6" />
+
+                <p
+                  className="mt-5 text-sm text-white/70"
+                  style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
+                >
                   {fee.duration}
                 </p>
-
-                <div className="border-t border-white/10 my-5" />
-
-                {/* Includes */}
-                <p className="text-white/76 text-sm leading-relaxed" style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}>
+                <p
+                  className="mt-4 text-sm leading-relaxed text-white/78"
+                  style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
+                >
                   {fee.includes}
                 </p>
-              </motion.div>
+              </motion.article>
             );
           })}
         </div>
 
-        {/* Note */}
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="text-center text-white/30 text-sm italic mb-10"
+          className="mt-10 text-center text-sm italic text-white/38"
           style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
         >
           {t('fees.note')}
         </motion.p>
 
-        {/* CTA */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.4 }}
-          className="flex justify-center"
+          className="mt-10 flex justify-center"
         >
           <a
             href="#contact"
-            className="liquid-glass-strong rounded-full px-10 py-4 text-white font-medium inline-flex items-center gap-2 hover:gap-3 transition-all duration-300 text-base"
+            className="liquid-glass-strong inline-flex items-center gap-2 rounded-full px-10 py-4 text-base font-medium text-white transition-all duration-300 hover:gap-3"
             style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
           >
             {t('fees.cta')}
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRight className="h-4 w-4" />
           </a>
         </motion.div>
       </div>

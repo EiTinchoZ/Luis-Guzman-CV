@@ -4,10 +4,10 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Clock, Mail, MapPin, MessageCircle, Phone } from 'lucide-react';
 import { luisData } from '@/data/cv-data';
-import { useLanguage } from '@/i18n';
+import { useLanguage, type LanguageCode } from '@/i18n';
 
 export function Contact() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -18,6 +18,27 @@ export function Contact() {
   const whatsappUrl = `https://wa.me/${luisData.personal.phone.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(
     'Hola Luis, me interesa tu servicio de consultor\u00eda t\u00e9cnica.'
   )}`;
+
+  const copy = {
+    es: {
+      panel: 'Canal directo',
+      note:
+        'Este canal está pensado para conversaciones concretas: diagnóstico inicial, agenda de visita, soporte técnico o revisión de necesidad de tooling.',
+      expectations: ['Respuesta directa', 'Reunión virtual inicial', 'Visita técnica coordinable'],
+    },
+    en: {
+      panel: 'Direct channel',
+      note:
+        'This channel is intended for concrete conversations: initial diagnosis, visit scheduling, technical support, or tooling-need review.',
+      expectations: ['Direct response', 'Initial virtual meeting', 'On-site visit can be coordinated'],
+    },
+    pt: {
+      panel: 'Canal direto',
+      note:
+        'Este canal foi pensado para conversas concretas: diagnóstico inicial, agenda de visita, suporte técnico ou revisão de necessidade de ferramental.',
+      expectations: ['Resposta direta', 'Reunião virtual inicial', 'Visita técnica coordenável'],
+    },
+  }[language as LanguageCode];
 
   const infoItems = [
     {
@@ -83,77 +104,94 @@ export function Contact() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-5">
-          <motion.div
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-[360px_minmax(0,1fr)]">
+          <motion.aside
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col gap-4 lg:col-span-2"
+            className="dossier-panel p-6"
           >
-            {infoItems.map(({ icon: Icon, label, value, href }) => (
-              <div key={label} className="liquid-glass rounded-xl p-5">
-                <div className="mb-1 flex items-center gap-2">
-                  <Icon className="h-3.5 w-3.5" style={{ color: 'oklch(0.720 0.130 73)' }} />
-                  <span
-                    className="text-[10px] uppercase tracking-widest text-white/30"
-                    style={{ fontFamily: 'var(--font-geist-mono), monospace' }}
-                  >
-                    {label}
-                  </span>
-                </div>
-                {href ? (
-                  <a
-                    href={href}
-                    className="text-sm text-white/75 transition-colors hover:text-white"
-                    style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
-                  >
-                    {value}
-                  </a>
-                ) : (
-                  <p
-                    className="text-sm text-white/75"
-                    style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
-                  >
-                    {value}
-                  </p>
-                )}
-              </div>
-            ))}
+            <div className="technical-grid" />
+            <div className="relative z-10">
+              <p className="spec-label">{copy.panel}</p>
+              <p
+                className="mt-5 text-sm leading-relaxed text-white/72"
+                style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
+              >
+                {copy.note}
+              </p>
 
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="liquid-glass-gold mt-2 inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 font-semibold transition-all duration-300 hover:gap-3"
-              style={{
-                color: 'oklch(0.720 0.130 73)',
-                fontFamily: 'var(--font-jakarta), sans-serif',
-              }}
-            >
-              <MessageCircle className="h-4 w-4" />
-              {t('contact.whatsapp')}
-            </a>
-          </motion.div>
+              <div className="mt-6 space-y-3">
+                {copy.expectations.map((item) => (
+                  <div key={item} className="flex items-center gap-3 border-b border-white/8 pb-3 last:border-b-0 last:pb-0">
+                    <span className="h-2 w-2 rounded-full bg-primary" />
+                    <span
+                      className="text-sm text-white/78"
+                      style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
+                    >
+                      {item}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-8 space-y-3">
+                {infoItems.map(({ icon: Icon, label, value, href }) => (
+                  <div key={label} className="rounded-2xl border border-white/10 bg-[#0f141c]/70 p-4">
+                    <div className="mb-1 flex items-center gap-2">
+                      <Icon className="h-3.5 w-3.5 text-primary" />
+                      <span className="spec-label">{label}</span>
+                    </div>
+                    {href ? (
+                      <a
+                        href={href}
+                        className="text-sm text-white/78 transition-colors hover:text-white"
+                        style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
+                      >
+                        {value}
+                      </a>
+                    ) : (
+                      <p
+                        className="text-sm text-white/78"
+                        style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
+                      >
+                        {value}
+                      </p>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="liquid-glass-gold mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full px-6 py-3 font-semibold transition-all duration-300 hover:gap-3"
+                style={{
+                  color: 'oklch(0.720 0.130 73)',
+                  fontFamily: 'var(--font-jakarta), sans-serif',
+                }}
+              >
+                <MessageCircle className="h-4 w-4" />
+                {t('contact.whatsapp')}
+              </a>
+            </div>
+          </motion.aside>
 
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:col-span-3"
           >
             <form
               onSubmit={handleSubmit}
-              className="liquid-glass-strong flex flex-col gap-5 rounded-2xl p-8"
+              className="liquid-glass-strong flex flex-col gap-5 rounded-[2rem] p-8"
             >
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div className="flex flex-col gap-1.5">
-                  <label
-                    htmlFor="contact-name"
-                    className="text-xs tracking-wider text-white/62"
-                    style={{ fontFamily: 'var(--font-geist-mono), monospace' }}
-                  >
+                  <label htmlFor="contact-name" className="spec-label">
                     {t('contact.formName')}
                   </label>
                   <input
@@ -173,11 +211,7 @@ export function Contact() {
                 </div>
 
                 <div className="flex flex-col gap-1.5">
-                  <label
-                    htmlFor="contact-email"
-                    className="text-xs tracking-wider text-white/62"
-                    style={{ fontFamily: 'var(--font-geist-mono), monospace' }}
-                  >
+                  <label htmlFor="contact-email" className="spec-label">
                     {t('contact.formEmail')}
                   </label>
                   <input
@@ -198,11 +232,7 @@ export function Contact() {
               </div>
 
               <div className="flex flex-col gap-1.5">
-                <label
-                  htmlFor="contact-company"
-                  className="text-xs tracking-wider text-white/62"
-                  style={{ fontFamily: 'var(--font-geist-mono), monospace' }}
-                >
+                <label htmlFor="contact-company" className="spec-label">
                   {t('contact.formCompany')}
                 </label>
                 <input
@@ -222,16 +252,12 @@ export function Contact() {
               </div>
 
               <div className="flex flex-col gap-1.5">
-                <label
-                  htmlFor="contact-message"
-                  className="text-xs tracking-wider text-white/62"
-                  style={{ fontFamily: 'var(--font-geist-mono), monospace' }}
-                >
+                <label htmlFor="contact-message" className="spec-label">
                   {t('contact.formMessage')}
                 </label>
                 <textarea
                   id="contact-message"
-                  rows={4}
+                  rows={5}
                   value={form.message}
                   onChange={(event) =>
                     setForm((current) => ({ ...current, message: event.target.value }))
@@ -247,7 +273,7 @@ export function Contact() {
 
               <button
                 type="submit"
-                className="liquid-glass-gold w-full rounded-full px-8 py-3.5 font-semibold transition-all duration-300 hover:opacity-90"
+                className="liquid-glass-gold mt-2 w-full rounded-full px-8 py-3.5 font-semibold transition-all duration-300 hover:opacity-90"
                 style={{
                   color: 'oklch(0.720 0.130 73)',
                   fontFamily: 'var(--font-jakarta), sans-serif',
