@@ -16,7 +16,7 @@ export function Contact() {
   });
 
   const whatsappUrl = `https://wa.me/${luisData.personal.phone.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(
-    'Hola Luis, me interesa tu servicio de consultoria tecnica.'
+    'Hola Luis, me interesa tu servicio de consultor\u00eda t\u00e9cnica.'
   )}`;
 
   const infoItems = [
@@ -48,7 +48,7 @@ export function Contact() {
     event.preventDefault();
 
     const subject = encodeURIComponent(
-      `Consulta tecnica - ${form.company || form.name || 'Nuevo contacto'}`
+      `Consulta t\u00e9cnica - ${form.company || form.name || 'Nuevo contacto'}`
     );
     const body = encodeURIComponent(
       `Nombre: ${form.name}\nEmpresa/Planta: ${form.company}\nEmail: ${form.email}\n\n${form.message}`
@@ -58,7 +58,8 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="bg-black px-6 py-28 md:px-16">
+    <section id="contact" className="bg-transparent px-6 py-28 md:px-16">
+      <div className="section-wash" />
       <div className="mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -75,7 +76,7 @@ export function Contact() {
             {t('contact.title')}
           </h2>
           <p
-            className="mx-auto mt-4 max-w-xl text-base text-white/45"
+            className="mx-auto mt-4 max-w-xl text-base text-white/68"
             style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
           >
             {t('contact.subtitle')}
@@ -150,7 +151,7 @@ export function Contact() {
                 <div className="flex flex-col gap-1.5">
                   <label
                     htmlFor="contact-name"
-                    className="text-xs tracking-wider text-white/40"
+                    className="text-xs tracking-wider text-white/62"
                     style={{ fontFamily: 'var(--font-geist-mono), monospace' }}
                   >
                     {t('contact.formName')}
@@ -174,7 +175,7 @@ export function Contact() {
                 <div className="flex flex-col gap-1.5">
                   <label
                     htmlFor="contact-email"
-                    className="text-xs tracking-wider text-white/40"
+                    className="text-xs tracking-wider text-white/62"
                     style={{ fontFamily: 'var(--font-geist-mono), monospace' }}
                   >
                     {t('contact.formEmail')}
@@ -199,7 +200,7 @@ export function Contact() {
               <div className="flex flex-col gap-1.5">
                 <label
                   htmlFor="contact-company"
-                  className="text-xs tracking-wider text-white/40"
+                  className="text-xs tracking-wider text-white/62"
                   style={{ fontFamily: 'var(--font-geist-mono), monospace' }}
                 >
                   {t('contact.formCompany')}
@@ -223,7 +224,7 @@ export function Contact() {
               <div className="flex flex-col gap-1.5">
                 <label
                   htmlFor="contact-message"
-                  className="text-xs tracking-wider text-white/40"
+                  className="text-xs tracking-wider text-white/62"
                   style={{ fontFamily: 'var(--font-geist-mono), monospace' }}
                 >
                   {t('contact.formMessage')}

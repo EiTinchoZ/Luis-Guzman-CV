@@ -11,7 +11,8 @@ export function Education() {
   const education = cv?.education ?? [];
 
   return (
-    <section id="education" className="py-28 px-6 md:px-16 bg-black">
+    <section id="education" className="bg-transparent px-6 py-28 md:px-16">
+      <div className="section-wash" />
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -27,7 +28,7 @@ export function Education() {
           >
             {t('education.title')}
           </h2>
-          <p className="text-white/45 mt-4 max-w-2xl mx-auto text-base" style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}>
+          <p className="text-white/68 mt-4 max-w-2xl mx-auto text-base" style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}>
             {t('education.subtitle')}
           </p>
         </motion.div>
@@ -70,7 +71,7 @@ export function Education() {
 
               {/* Institution */}
               <p
-                className="text-white/45 text-sm mt-2 leading-snug"
+                className="text-white/68 text-sm mt-2 leading-snug"
                 style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
               >
                 {edu.institution}

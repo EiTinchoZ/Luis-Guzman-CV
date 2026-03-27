@@ -53,7 +53,7 @@ export async function POST(request: Request) {
   if (resendApiKey) {
     try {
       const from =
-        process.env.RESEND_FROM ?? 'Luis Guzman Portfolio <onboarding@resend.dev>';
+        process.env.RESEND_FROM ?? 'Luis Guzm\u00e1n Portfolio <onboarding@resend.dev>';
       const to = process.env.CONTACT_EMAIL ?? 'luiseudoro@gmail.com';
 
       const res = await fetch('https://api.resend.com/emails', {
@@ -65,7 +65,7 @@ export async function POST(request: Request) {
         body: JSON.stringify({
           from,
           to: [to],
-          subject: `Nuevo mensaje para Luis Guzman - ${name}`,
+          subject: `Nuevo mensaje para Luis Guzm\u00e1n - ${name}`,
           html: `
             <p><strong>De:</strong> ${escapeHtml(name)} &lt;${escapeHtml(email)}&gt;</p>
             <hr style="border:none;border-top:1px solid #e2e8f0;margin:16px 0">

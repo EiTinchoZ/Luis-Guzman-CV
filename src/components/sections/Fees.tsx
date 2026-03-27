@@ -22,7 +22,8 @@ export function Fees() {
   const fees = cv?.fees ?? [];
 
   return (
-    <section id="fees" className="py-28 px-6 md:px-16 bg-black relative overflow-hidden">
+    <section id="fees" className="relative overflow-hidden bg-transparent px-6 py-28 md:px-16">
+      <div className="section-wash" />
       {/* CTA video bg */}
       <BackgroundVideo
         className="absolute inset-0 w-full h-full object-cover z-0"
@@ -46,7 +47,7 @@ export function Fees() {
           >
             {t('fees.title')}
           </h2>
-          <p className="text-white/45 mt-4 max-w-2xl mx-auto text-base" style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}>
+          <p className="text-white/68 mt-4 max-w-2xl mx-auto text-base" style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}>
             {t('fees.subtitle')}
           </p>
         </motion.div>
@@ -89,14 +90,14 @@ export function Fees() {
                 </p>
 
                 {/* Duration */}
-                <p className="text-white/45 text-sm mt-3" style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}>
+                <p className="text-white/68 text-sm mt-3" style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}>
                   {fee.duration}
                 </p>
 
                 <div className="border-t border-white/10 my-5" />
 
                 {/* Includes */}
-                <p className="text-white/55 text-sm leading-relaxed" style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}>
+                <p className="text-white/76 text-sm leading-relaxed" style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}>
                   {fee.includes}
                 </p>
               </motion.div>

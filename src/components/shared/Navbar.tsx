@@ -54,12 +54,14 @@ export function Navbar() {
         <nav
           className="flex items-center gap-1 rounded-full px-3 py-2 transition-all duration-500"
           style={{
-            background: isScrolled ? 'rgba(0,0,0,0.75)' : 'rgba(0,0,0,0.34)',
-            backdropFilter: isScrolled ? 'blur(20px)' : 'blur(8px)',
+            background: isScrolled
+              ? 'linear-gradient(180deg, rgba(18,24,33,0.88), rgba(8,11,16,0.82))'
+              : 'linear-gradient(180deg, rgba(18,24,33,0.6), rgba(8,11,16,0.42))',
+            backdropFilter: isScrolled ? 'blur(24px)' : 'blur(14px)',
             border: isScrolled
-              ? '1px solid rgba(255,255,255,0.08)'
-              : '1px solid transparent',
-            boxShadow: isScrolled ? '0 4px 24px rgba(0,0,0,0.4)' : 'none',
+              ? '1px solid rgba(230,219,194,0.12)'
+              : '1px solid rgba(230,219,194,0.06)',
+            boxShadow: isScrolled ? '0 24px 70px -30px rgba(0,0,0,0.72)' : '0 12px 44px -36px rgba(0,0,0,0.58)',
           }}
         >
           <a
@@ -119,7 +121,7 @@ export function Navbar() {
                 className="flex h-8 w-8 items-center justify-center rounded-full transition-all"
                 style={{
                   background: isOpen ? 'oklch(0.720 0.130 73 / 15%)' : 'transparent',
-                  color: 'rgba(255,255,255,0.6)',
+                  color: 'rgba(255,255,255,0.72)',
                 }}
                 aria-label="Toggle menu"
               >
@@ -138,9 +140,9 @@ export function Navbar() {
               transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
               className="mt-2 flex flex-col gap-1 rounded-2xl p-4"
               style={{
-                background: 'rgba(0,0,0,0.85)',
-                backdropFilter: 'blur(30px)',
-                border: '1px solid rgba(255,255,255,0.08)',
+                background: 'linear-gradient(180deg, rgba(18,24,33,0.94), rgba(8,11,16,0.92))',
+                backdropFilter: 'blur(32px)',
+                border: '1px solid rgba(230,219,194,0.12)',
               }}
             >
               {navLinks.map((item) => (
@@ -202,10 +204,10 @@ export function Navbar() {
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="fixed bottom-6 left-6 z-40 flex h-10 w-10 items-center justify-center rounded-full transition-all hover:scale-110 active:scale-95"
             style={{
-              background: 'rgba(0,0,0,0.7)',
-              backdropFilter: 'blur(12px)',
-              border: '1px solid rgba(255,255,255,0.08)',
-              color: 'rgba(255,255,255,0.4)',
+              background: 'rgba(16,22,29,0.82)',
+              backdropFilter: 'blur(18px)',
+              border: '1px solid rgba(230,219,194,0.12)',
+              color: 'rgba(255,255,255,0.62)',
             }}
             aria-label="Back to top"
           >

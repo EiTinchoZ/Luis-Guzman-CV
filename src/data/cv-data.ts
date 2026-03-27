@@ -77,13 +77,13 @@ export interface LuisData {
 }
 
 const personal: PersonalData = {
-  name: 'Luis Guzman',
-  fullName: 'Luis Eudoro Guzman Sanchez',
-  location: 'Panama City, Panama',
+  name: 'Luis Guzmán',
+  fullName: 'Luis Eudoro Guzmán Sánchez',
+  location: 'Ciudad de Panamá, Panamá',
   phone: '+507 6938 9715',
   email: 'luiseudoro@gmail.com',
   currentRole: 'Regional Sales LATAM',
-  currentCompany: 'Zermatt Tools Ferramentas de Precisao Ltda.',
+  currentCompany: 'Zermatt Tools Ferramentas de Precisão Ltda.',
 };
 
 const stats = [
@@ -99,151 +99,151 @@ export const luisData: LuisData = {
   cv: {
     es: {
       profile:
-        'Tecnologo en Ingenieria Industrial con mas de 27 anos de experiencia en mantenimiento, reparacion y coordinacion de equipos de produccion en la industria de envases metalicos. Especialista en fabricacion de envases de aluminio de dos piezas con trayectoria directa en Crown Colombiana, EUBALL Panama y soporte tecnico-comercial en varias plantas de LATAM.',
+        'Tecnólogo en Ingeniería Industrial con más de 27 años de experiencia en mantenimiento, reparación y coordinación de equipos de producción en la industria de envases metálicos. Especialista en fabricación de envases de aluminio de dos piezas, con trayectoria directa en Crown Colombiana, EUBALL Panamá y soporte técnico-comercial en varias plantas de LATAM.',
       about: {
         quote: 'Conozco los problemas porque los he vivido.',
         quoteDescription:
-          'Luis combina experiencia real de planta, liderazgo operativo y criterio tecnico para entrar rapido al problema y convertirlo en una accion util.',
+          'Luis combina experiencia real de planta, liderazgo operativo y criterio técnico para entrar rápido al problema y convertirlo en una acción útil.',
       },
       skills: {
         technical: [
           'Mantenimiento preventivo y correctivo',
-          'Interpretacion de diagramas mecanicos, hidraulicos y electricos',
-          'Analisis de fallas y metrologia mecanica',
+          'Interpretación de diagramas mecánicos, hidráulicos y eléctricos',
+          'Análisis de fallas y metrología mecánica',
           'Montaje y ajuste de componentes',
-          'Control estadistico de procesos',
+          'Control estadístico de procesos',
           'ISO 9001 / ISO 14001 / OHSAS 18001',
           'SAP y MP9',
         ],
         equipment: [
-          'Multiplicadores de torque hidraulicos',
-          'Bombas hidraulicas',
+          'Multiplicadores de torque hidráulicos',
+          'Bombas hidráulicas',
           'Pistolas de impacto',
-          'Camara termografica',
-          'Rugosimetro',
+          'Cámara termográfica',
+          'Rugosímetro',
           'Videoscopio',
           'Banco de pruebas',
         ],
         software: ['SAP (key user)', 'MP9', 'Microsoft Office'],
         softSkills: [
           'Trabajo en equipo',
-          'Orientacion a resultados',
-          'Comunicacion clara',
-          'Capacitacion tecnica',
-          'Disponibilidad para visitas tecnicas',
+          'Orientación a resultados',
+          'Comunicación clara',
+          'Capacitación técnica',
+          'Disponibilidad para visitas técnicas',
         ],
       },
       experience: [
         {
           role: 'Regional Sales LATAM',
-          company: 'Zermatt Tools Ferramentas de Precisao Ltda.',
-          location: 'America Latina',
+          company: 'Zermatt Tools Ferramentas de Precisão Ltda.',
+          location: 'América Latina',
           period: 'Ago 2024 - Presente',
           description:
-            'Desarrollo comercial y soporte tecnico para clientes de la industria de envases metalicos, con apertura de negocios en Colombia, Panama, Guatemala y Mexico.',
+            'Desarrollo comercial y soporte técnico para clientes de la industria de envases metálicos, con apertura de negocios en Colombia, Panamá, Guatemala y México.',
         },
         {
-          role: 'Jefe de Area Back End',
-          company: 'EUBALL Panama',
-          location: 'Panama City, Panama',
+          role: 'Jefe de Área Back End',
+          company: 'EUBALL Panamá',
+          location: 'Ciudad de Panamá, Panamá',
           period: 'Ene 2022 - May 2024',
           description:
             'Responsable de mantenimiento, disponibilidad de equipos y pruebas de nuevos materiales y herramientas para mejorar el proceso y optimizar costos.',
         },
         {
-          role: 'Jefe de Garantia de Calidad y Mejora Continua',
-          company: 'EUBALL Panama',
-          location: 'Panama City, Panama',
+          role: 'Jefe de Garantía de Calidad y Mejora Continua',
+          company: 'EUBALL Panamá',
+          location: 'Ciudad de Panamá, Panamá',
           period: 'Jul 2020 - Dic 2021',
           description:
-            'Control de variables de proceso y coordinacion de ACR / 3D para atender fallas de equipo, proceso y producto.',
+            'Control de variables de proceso y coordinación de ACR / 3D para atender fallas de equipo, proceso y producto.',
         },
         {
           role: 'Coordinador de Mantenimiento',
-          company: 'EUBALL Panama',
-          location: 'Panama City, Panama',
+          company: 'EUBALL Panamá',
+          location: 'Ciudad de Panamá, Panamá',
           period: 'Jun 2017 - Jul 2020',
           description:
-            'Planificacion y coordinacion de mantenimiento mensual y anual de equipos de produccion mediante SAP y MP9.',
+            'Planificación y coordinación de mantenimiento mensual y anual de equipos de producción mediante SAP y MP9.',
         },
         {
-          role: 'Ingeniero de Control de Produccion',
-          company: 'EUBALL Panama',
-          location: 'Panama City, Panama',
+          role: 'Ingeniero de Control de Producción',
+          company: 'EUBALL Panamá',
+          location: 'Ciudad de Panamá, Panamá',
           period: 'Ene 2015 - May 2017',
           description:
-            'Validacion de registros de produccion, materias primas, tiempos de fabricacion e inventario en SAP.',
+            'Validación de registros de producción, materias primas, tiempos de fabricación e inventario en SAP.',
         },
         {
-          role: 'Coordinador de Produccion',
+          role: 'Coordinador de Producción',
           company: 'Crown Colombiana S.A.',
           location: 'Colombia',
           period: 'Ene 2000 - Sep 2013',
           description:
-            'Liderazgo de 60 personas en 3 turnos con foco en eficiencia, reduccion de desperdicio y cumplimiento de seguridad.',
+            'Liderazgo de 60 personas en 3 turnos con foco en eficiencia, reducción de desperdicio y cumplimiento de seguridad.',
         },
         {
-          role: 'Mecanico de Mantenimiento y Herramenteria',
+          role: 'Mecánico de Mantenimiento y Herramentería',
           company: 'Crown Colombiana S.A.',
           location: 'Colombia',
           period: 'Jun 1997 - Dic 1999',
           description:
-            'Revision, mantenimiento y rectificacion de herramientas para fabricacion de envases de aluminio de dos piezas.',
+            'Revisión, mantenimiento y rectificación de herramientas para fabricación de envases de aluminio de dos piezas.',
         },
       ],
       education: [
-        { degree: 'Tecnologo en Ingenieria Industrial', institution: 'UNAD', year: '2013' },
-        { degree: 'Tecnico en Mantenimiento Industrial', institution: 'SENA', year: '1991' },
-        { degree: 'Bachiller Tecnico en Mecanica Industrial y Fundicion', institution: 'Colegio Distrital Tomas Rueda Vargas', year: '1985' },
+        { degree: 'Tecnólogo en Ingeniería Industrial', institution: 'UNAD', year: '2013' },
+        { degree: 'Técnico en Mantenimiento Industrial', institution: 'SENA', year: '1991' },
+        { degree: 'Bachiller Técnico en Mecánica Industrial y Fundición', institution: 'Colegio Distrital Tomas Rueda Vargas', year: '1985' },
       ],
       services: [
         {
-          title: 'Asistencia tecnica en sitio',
+          title: 'Asistencia técnica en sitio',
           description:
-            'Supervision presencial en planta, soporte tecnico durante pruebas y recomendaciones inmediatas para ajustar proceso, equipos o herramentales.',
+            'Supervisión presencial en planta, soporte técnico durante pruebas y recomendaciones inmediatas para ajustar proceso, equipos o herramentales.',
         },
         {
-          title: 'Supervision de pruebas de herramientas de precision',
+          title: 'Supervisión de pruebas de herramientas de precisión',
           description:
-            'Validacion de herramientas nuevas en linea, comparacion de resultados y documentacion tecnica para toma de decision.',
+            'Validación de herramientas nuevas en línea, comparación de resultados y documentación técnica para toma de decisión.',
         },
         {
-          title: 'Diagnostico y analisis de fallas',
+          title: 'Diagnóstico y análisis de fallas',
           description:
-            'Identificacion de causa raiz, levantamiento tecnico y plan de accion correctiva para equipos de produccion.',
+            'Identificación de causa raíz, levantamiento técnico y plan de acción correctiva para equipos de producción.',
         },
         {
-          title: 'Capacitacion y transferencia de conocimiento',
+          title: 'Capacitación y transferencia de conocimiento',
           description:
-            'Formacion para tecnicos y operadores en mantenimiento, criterios de operacion y buenas practicas de industria.',
+            'Formación para técnicos y operadores en mantenimiento, criterios de operación y buenas prácticas de industria.',
         },
         {
-          title: 'Consultoria en programas de mantenimiento',
+          title: 'Consultoría en programas de mantenimiento',
           description:
-            'Revision y optimizacion de rutinas preventivas, correctivas, indicadores y uso de SAP / MP9 para elevar disponibilidad.',
+            'Revisión y optimización de rutinas preventivas, correctivas, indicadores y uso de SAP / MP9 para elevar disponibilidad.',
         },
       ],
       methodology: [
-        { number: '01', title: 'Preparacion pre-visita', description: 'Revision de informacion tecnica, historicos y objetivo puntual de la intervencion.' },
-        { number: '02', title: 'Evaluacion inicial en sitio', description: 'Lectura operativa del area, equipos, parametros y alineacion con el equipo local.' },
-        { number: '03', title: 'Ejecucion y supervision', description: 'Acompanamiento de pruebas, observacion de variables criticas y ajuste tecnico cuando se requiere.' },
-        { number: '04', title: 'Analisis y resultados', description: 'Comparacion contra objetivo, hallazgos tecnicos y oportunidades de mejora.' },
-        { number: '05', title: 'Informe y seguimiento', description: 'Entrega de recomendaciones, plan de accion y seguimiento posterior.' },
+        { number: '01', title: 'Preparación pre-visita', description: 'Revisión de información técnica, históricos y objetivo puntual de la intervención.' },
+        { number: '02', title: 'Evaluación inicial en sitio', description: 'Lectura operativa del área, equipos, parámetros y alineación con el equipo local.' },
+        { number: '03', title: 'Ejecución y supervisión', description: 'Acompañamiento de pruebas, observación de variables críticas y ajuste técnico cuando se requiere.' },
+        { number: '04', title: 'Análisis y resultados', description: 'Comparación contra objetivo, hallazgos técnicos y oportunidades de mejora.' },
+        { number: '05', title: 'Informe y seguimiento', description: 'Entrega de recomendaciones, plan de acción y seguimiento posterior.' },
       ],
       clients: [
-        { company: 'Crown Colombiana S.A.', country: 'Colombia', relationship: '16 anos de experiencia directa en planta' },
-        { company: 'EUBALL Panama', country: 'Panama', relationship: '10 anos en multiples roles de liderazgo' },
-        { company: 'Envases Universales / Ball', country: 'Panama, Guatemala, Mexico', relationship: 'Relacion comercial activa' },
-        { company: 'Canpack Colombia', country: 'Colombia', relationship: 'Relacion comercial establecida' },
-        { company: 'Crown Cork', country: 'Mexico', relationship: 'Presentaciones tecnicas y comerciales' },
-        { company: 'Heineken Meoqui', country: 'Mexico', relationship: 'Presentaciones tecnicas de herramientas' },
+        { company: 'Crown Colombiana S.A.', country: 'Colombia', relationship: '16 años de experiencia directa en planta' },
+        { company: 'EUBALL Panamá', country: 'Panamá', relationship: '10 años en múltiples roles de liderazgo' },
+        { company: 'Envases Universales / Ball', country: 'Panamá, Guatemala, México', relationship: 'Relación comercial activa' },
+        { company: 'Canpack Colombia', country: 'Colombia', relationship: 'Relación comercial establecida' },
+        { company: 'Crown Cork', country: 'México', relationship: 'Presentaciones técnicas y comerciales' },
+        { company: 'Heineken Meoqui', country: 'México', relationship: 'Presentaciones técnicas de herramientas' },
         { company: 'ECA', country: 'Guatemala', relationship: 'Proyectos comerciales' },
       ],
-      events: ['LATAMCAN Brasil 2025', 'LATAMCAN Mexico 2026'],
+      events: ['LATAMCAN Brasil 2025', 'LATAMCAN México 2026'],
       fees: [
-        { type: 'Tarifa por hora', duration: '1 hora', rate: '$120 USD', includes: 'Consultoria remota o presencial' },
-        { type: 'Medio dia', duration: 'Hasta 4 horas', rate: '$500 USD', includes: 'Visita tecnica y reporte preliminar' },
-        { type: 'Dia completo', duration: '8 horas', rate: '$950 USD', includes: 'Visita tecnica, supervision, analisis e informe' },
+        { type: 'Tarifa por hora', duration: '1 hora', rate: '$120 USD', includes: 'Consultoría remota o presencial' },
+        { type: 'Medio día', duration: 'Hasta 4 horas', rate: '$500 USD', includes: 'Visita técnica y reporte preliminar' },
+        { type: 'Día completo', duration: '8 horas', rate: '$950 USD', includes: 'Visita técnica, supervisión, análisis e informe' },
       ],
     },
     en: {

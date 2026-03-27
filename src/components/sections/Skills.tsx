@@ -18,7 +18,8 @@ export function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-28 px-6 md:px-16 bg-black">
+    <section id="skills" className="bg-transparent px-6 py-28 md:px-16">
+      <div className="section-wash" />
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -34,7 +35,7 @@ export function Skills() {
           >
             {t('skills.title')}
           </h2>
-          <p className="text-white/45 mt-4 max-w-2xl mx-auto text-base" style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}>
+          <p className="text-white/68 mt-4 max-w-2xl mx-auto text-base" style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}>
             {t('skills.subtitle')}
           </p>
         </motion.div>

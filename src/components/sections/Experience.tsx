@@ -11,7 +11,8 @@ export function Experience() {
   const experience = cv?.experience ?? [];
 
   return (
-    <section id="experience" className="py-28 px-6 md:px-16 bg-black">
+    <section id="experience" className="bg-transparent px-6 py-28 md:px-16">
+      <div className="section-wash" />
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -27,7 +28,7 @@ export function Experience() {
           >
             {t('experience.title')}
           </h2>
-          <p className="text-white/45 mt-4 max-w-xl text-base" style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}>
+          <p className="text-white/68 mt-4 max-w-xl text-base" style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}>
             {t('experience.subtitle')}
           </p>
         </motion.div>
@@ -68,7 +69,7 @@ export function Experience() {
                 </h3>
 
                 {/* Company + location */}
-                <p className="text-white/45 text-sm mt-0.5" style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}>
+                <p className="text-white/68 text-sm mt-0.5" style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}>
                   {item.company} · {item.location}
                 </p>
 

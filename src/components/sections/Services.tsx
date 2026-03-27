@@ -24,7 +24,8 @@ export function Services() {
   const services = cv?.services ?? [];
 
   return (
-    <section id="services" className="py-28 px-6 md:px-16 bg-black relative overflow-hidden">
+    <section id="services" className="relative overflow-hidden bg-transparent px-6 py-28 md:px-16">
+      <div className="section-wash" />
       {/* Video background */}
       <BackgroundVideo
         className="absolute inset-0 w-full h-full object-cover z-0"
@@ -49,7 +50,7 @@ export function Services() {
           >
             {t('services.title')}
           </h2>
-          <p className="text-white/45 mt-4 max-w-2xl mx-auto text-base" style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}>
+          <p className="text-white/68 mt-4 max-w-2xl mx-auto text-base" style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}>
             {t('services.subtitle')}
           </p>
         </motion.div>
@@ -90,7 +91,7 @@ export function Services() {
                   {service.title}
                 </h3>
                 <p
-                  className="text-white/55 text-sm leading-relaxed flex-1"
+                  className="text-white/76 text-sm leading-relaxed flex-1"
                   style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
                 >
                   {service.description}

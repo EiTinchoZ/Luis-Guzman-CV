@@ -17,7 +17,7 @@ export function About() {
           ? 'years in manufacturing'
           : language === 'pt'
             ? 'anos em manufatura'
-            : 'anos en manufactura',
+            : 'a\u00f1os en manufactura',
     },
     {
       value: 'LATAM',
@@ -49,7 +49,8 @@ export function About() {
   ];
 
   return (
-    <section id="about" className="bg-black px-6 py-28 md:px-16">
+    <section id="about" className="bg-transparent px-6 py-28 md:px-16">
+      <div className="section-wash" />
       <div className="mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -58,17 +59,14 @@ export function About() {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="mb-16"
         >
-          <span className="badge-pill">PROFILE</span>
+          <span className="badge-pill">PERFIL</span>
           <h2
             className="mt-4 text-4xl leading-[0.9] tracking-tight text-white md:text-5xl lg:text-6xl"
             style={{ fontFamily: 'var(--font-instrument), serif', fontStyle: 'italic' }}
           >
             {t('about.title')}
           </h2>
-          <p
-            className="mt-4 max-w-xl text-base text-white/45"
-            style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
-          >
+          <p className="mt-4 max-w-xl text-base text-white/74" style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}>
             {t('about.subtitle')}
           </p>
         </motion.div>
@@ -141,7 +139,7 @@ export function About() {
                 {cv.about.quote}
               </p>
               <p
-                className="mt-4 text-sm leading-relaxed text-white/50"
+                className="mt-4 text-sm leading-relaxed text-white/72"
                 style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
               >
                 {cv.about.quoteDescription}
@@ -158,7 +156,7 @@ export function About() {
                     {item.value}
                   </div>
                   <div
-                    className="mt-1 text-xs text-white/40"
+                    className="mt-1 text-xs text-white/64"
                     style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
                   >
                     {item.label}
@@ -188,7 +186,7 @@ export function About() {
                   {luisData.personal.currentRole}
                 </p>
                 <p
-                  className="mt-0.5 text-xs text-white/50"
+                  className="mt-0.5 text-xs text-white/68"
                   style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
                 >
                   {luisData.personal.currentCompany}

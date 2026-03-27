@@ -24,7 +24,13 @@ export function Footer() {
   ].filter((item): item is { name: string; href: string; icon: typeof Linkedin } => Boolean(item.href));
 
   return (
-    <footer className="border-t bg-black" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
+    <footer
+      className="border-t bg-transparent"
+      style={{
+        borderColor: 'rgba(255,255,255,0.08)',
+        background: 'linear-gradient(180deg, rgba(10,15,21,0.08), rgba(10,15,21,0.42))',
+      }}
+    >
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-6 py-12 md:grid-cols-3 md:gap-8 md:px-16 md:py-16">
         <div className="space-y-4">
           <div>
@@ -36,7 +42,7 @@ export function Footer() {
                 fontStyle: 'italic',
               }}
             >
-              Luis Guzman
+              Luis Guzm\u00e1n
             </p>
             <p
               className="mt-1 text-xs uppercase tracking-widest"
@@ -66,7 +72,7 @@ export function Footer() {
                 key={link.label}
                 href={link.href}
                 className="text-sm transition-colors hover:text-white"
-                style={{ color: 'rgba(255,255,255,0.40)', fontFamily: 'var(--font-jakarta), sans-serif' }}
+                style={{ color: 'rgba(255,255,255,0.56)', fontFamily: 'var(--font-jakarta), sans-serif' }}
               >
                 {link.label}
               </a>
@@ -89,7 +95,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-sm transition-colors hover:text-white"
-                style={{ color: 'rgba(255,255,255,0.40)', fontFamily: 'var(--font-jakarta), sans-serif' }}
+                style={{ color: 'rgba(255,255,255,0.56)', fontFamily: 'var(--font-jakarta), sans-serif' }}
                 aria-label={link.name}
               >
                 <link.icon className="h-3.5 w-3.5" />

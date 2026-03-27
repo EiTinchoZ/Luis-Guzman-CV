@@ -32,38 +32,38 @@ export const viewport: Viewport = {
   themeColor: '#000000',
 };
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://luisguzman.vercel.app';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://luis-guzman-cv.vercel.app';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'Luis Guzman | Senior Technical Consultant',
+  title: 'Luis Guzm\u00e1n | Senior Technical Consultant',
   description:
-    'Luis Eudoro Guzman Sanchez. Senior technical consultant with 27+ years of experience in aluminum can manufacturing, diagnostics, maintenance, and technical support across Latin America.',
+    'Luis Eudoro Guzm\u00e1n S\u00e1nchez. Senior technical consultant with 27+ years of experience in aluminum can manufacturing, diagnostics, maintenance, and technical support across Latin America.',
   keywords: [
-    'Luis Guzman',
+    'Luis Guzm\u00e1n',
     'Senior Technical Consultant',
     'Metal Packaging',
     'Aluminum Can Manufacturing',
     'Industrial Maintenance',
     'Technical Assistance',
     'Zermatt Tools',
-    'EUBALL Panama',
+    'EUBALL Panam\u00e1',
     'Crown Colombiana',
   ],
-  authors: [{ name: 'Luis Eudoro Guzman Sanchez' }],
+  authors: [{ name: 'Luis Eudoro Guzm\u00e1n S\u00e1nchez' }],
   robots: { index: true, follow: true },
   openGraph: {
-    title: 'Luis Guzman | Senior Technical Consultant',
+    title: 'Luis Guzm\u00e1n | Senior Technical Consultant',
     description:
       'Technical consulting, diagnostics, plant support, and precision tooling supervision for the metal packaging industry in LATAM.',
     type: 'website',
     locale: 'es_PA',
-    siteName: 'Luis Guzman Portfolio',
+    siteName: 'Luis Guzm\u00e1n Portfolio',
     url: siteUrl,
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Luis Guzman | Senior Technical Consultant',
+    title: 'Luis Guzm\u00e1n | Senior Technical Consultant',
     description:
       '27+ years in aluminum can manufacturing, maintenance, diagnostics, and technical support across LATAM.',
   },
@@ -74,7 +74,7 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'Person',
-      name: 'Luis Eudoro Guzman Sanchez',
+      name: 'Luis Eudoro Guzm\u00e1n S\u00e1nchez',
       jobTitle: 'Senior Technical Consultant | Metal Packaging Industry',
       url: siteUrl,
       email: 'luiseudoro@gmail.com',
@@ -82,7 +82,7 @@ const jsonLd = {
       address: {
         '@type': 'PostalAddress',
         addressCountry: 'PA',
-        addressLocality: 'Panama City',
+        addressLocality: 'Ciudad de Panam\u00e1',
       },
       knowsAbout: [
         'Aluminum can manufacturing',
@@ -96,10 +96,10 @@ const jsonLd = {
     },
     {
       '@type': 'WebSite',
-      name: 'Luis Guzman Technical Portfolio',
+      name: 'Luis Guzm\u00e1n Technical Portfolio',
       url: siteUrl,
       description:
-        'Professional portfolio of Luis Eudoro Guzman Sanchez focused on technical consulting for the metal packaging industry.',
+        'Professional portfolio of Luis Eudoro Guzm\u00e1n S\u00e1nchez focused on technical consulting for the metal packaging industry.',
     },
   ],
 };
@@ -118,7 +118,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${plusJakartaSans.variable} ${instrumentSerif.variable} ${geistMono.variable} bg-black antialiased`}
+        className={`${plusJakartaSans.variable} ${instrumentSerif.variable} ${geistMono.variable} bg-[#0a0f15] antialiased`}
       >
         <a
           href="#main-content"
@@ -128,7 +128,7 @@ export default function RootLayout({
         </a>
         <LanguageProvider>
           <Navbar />
-          <main id="main-content" className="min-h-[100dvh] bg-black">
+          <main id="main-content" className="min-h-[100dvh] bg-transparent">
             {children}
           </main>
           <Footer />

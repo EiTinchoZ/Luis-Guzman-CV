@@ -5,46 +5,46 @@
     "skills": "Competencias",
     "experience": "Experiencia",
     "services": "Servicios",
-    "methodology": "Metodologia",
+    "methodology": "Metodología",
     "clients": "Clientes",
-    "education": "Formacion",
+    "education": "Formación",
     "fees": "Tarifas",
     "contact": "Contacto"
   },
   "hero": {
-    "eyebrow": "Consultor Tecnico Senior",
-    "title": "Especialista en fabricacion de envases de aluminio",
-    "subtitle": "27+ anos operando, manteniendo y mejorando procesos en plantas de clase mundial.",
+    "eyebrow": "Consultor Técnico Senior",
+    "title": "Especialista en fabricación de envases de aluminio",
+    "subtitle": "27+ años operando, manteniendo y mejorando procesos en plantas de clase mundial.",
     "cta": "Contratar servicio",
     "ctaSecondary": "Ver servicios",
-    "badge": "Disponible para visitas tecnicas"
+    "badge": "Disponible para visitas técnicas"
   },
   "about": {
     "title": "Perfil Profesional",
-    "subtitle": "Experiencia real de planta combinada con soporte tecnico y criterio comercial para LATAM.",
+    "subtitle": "Experiencia real de planta combinada con soporte técnico y criterio comercial para LATAM.",
     "currentRole": "Cargo actual",
-    "location": "Ubicacion",
+    "location": "Ubicación",
     "availability": "Disponibilidad",
     "availabilityValue": "Inmediata para proyectos, visitas y seguimiento remoto",
     "languages": "Idiomas",
-    "languagesValue": "Espanol nativo | Ingles basico | Portugues funcional",
+    "languagesValue": "Español nativo | Inglés básico | Portugués funcional",
     "highlights": {
       "experienceLabel": "en manufactura",
       "specialization": "Especialista",
-      "specializationLabel": "envases aluminio",
+      "specializationLabel": "envases de aluminio",
       "network": "Red LATAM",
-      "networkLabel": "contactos industria",
+      "networkLabel": "contactos de industria",
       "availability": "Disponible",
       "availabilityLabel": "para planta"
     }
   },
   "skills": {
-    "title": "Competencias Tecnicas",
-    "subtitle": "Herramientas, criterio tecnico y conocimiento operativo para entrar rapido al problema correcto.",
-    "technical": "Tecnicas",
-    "equipment": "Diagnostico",
+    "title": "Competencias Técnicas",
+    "subtitle": "Herramientas, criterio técnico y conocimiento operativo para entrar rápido al problema correcto.",
+    "technical": "Técnicas",
+    "equipment": "Diagnóstico",
     "software": "Sistemas",
-    "softSkills": "Operacion"
+    "softSkills": "Operación"
   },
   "experience": {
     "title": "Trayectoria Profesional",
@@ -52,76 +52,76 @@
   },
   "services": {
     "title": "Servicios Ofrecidos",
-    "subtitle": "Asistencia tecnica especializada segun el estado real de la planta, el equipo y el objetivo del cliente.",
+    "subtitle": "Asistencia técnica especializada según el estado real de la planta, el equipo y el objetivo del cliente.",
     "eyebrow": "Portafolio de Servicios",
     "cta": "Consultar disponibilidad"
   },
   "methodology": {
-    "title": "Metodologia de Trabajo",
-    "subtitle": "Un proceso claro para convertir la visita tecnica en decisiones operativas utiles.",
+    "title": "Metodología de Trabajo",
+    "subtitle": "Un proceso claro para convertir la visita técnica en decisiones operativas útiles.",
     "eyebrow": "Proceso"
   },
   "clients": {
     "title": "Clientes y Experiencia de Campo",
-    "subtitle": "Relacion directa con plantas, grupos industriales y operaciones tecnicas en varios mercados de LATAM.",
+    "subtitle": "Relación directa con plantas, grupos industriales y operaciones técnicas en varios mercados de LATAM.",
     "eyebrow": "Experiencia Regional",
     "company": "Empresa",
-    "country": "Pais",
-    "relationship": "Relacion",
+    "country": "País",
+    "relationship": "Relación",
     "events": "Eventos internacionales"
   },
   "education": {
-    "title": "Formacion",
-    "subtitle": "Base tecnica y academica enfocada en operacion, mantenimiento y manufactura.",
-    "eyebrow": "Formacion"
+    "title": "Formación",
+    "subtitle": "Base técnica y académica enfocada en operación, mantenimiento y manufactura.",
+    "eyebrow": "Formación"
   },
   "fees": {
     "title": "Estructura de Tarifas",
-    "subtitle": "Servicios de consultoria tecnica especializada. Traslados y hospedaje se cotizan por separado cuando aplica.",
+    "subtitle": "Servicios de consultoría técnica especializada. Traslados y hospedaje se cotizan por separado cuando aplica.",
     "eyebrow": "Tarifas 2026",
     "type": "Modalidad",
-    "duration": "Duracion",
+    "duration": "Duración",
     "rate": "Tarifa",
     "includes": "Incluye",
-    "note": "Para proyectos de varios dias o relacion recurrente se pueden definir condiciones preferenciales.",
-    "cta": "Solicitar cotizacion"
+    "note": "Para proyectos de varios días o relación recurrente se pueden definir condiciones preferenciales.",
+    "cta": "Solicitar cotización"
   },
   "contact": {
     "title": "Contacto",
-    "subtitle": "Disponible para reuniones virtuales, visitas tecnicas y conversaciones iniciales de diagnostico.",
+    "subtitle": "Disponible para reuniones virtuales, visitas técnicas y conversaciones iniciales de diagnóstico.",
     "eyebrow": "Hablemos",
     "email": "Correo",
-    "phone": "Telefono / WhatsApp",
-    "location": "Ubicacion",
+    "phone": "Teléfono / WhatsApp",
+    "location": "Ubicación",
     "availability": "Disponible",
-    "availabilityValue": "Respuesta directa para consultas comerciales y tecnicas",
+    "availabilityValue": "Respuesta directa para consultas comerciales y técnicas",
     "formName": "Nombre completo",
-    "formEmail": "Correo electronico",
+    "formEmail": "Correo electrónico",
     "formCompany": "Empresa / Planta",
-    "formMessage": "Describe el servicio o problema tecnico",
+    "formMessage": "Describe el servicio o problema técnico",
     "formSend": "Enviar mensaje",
     "whatsapp": "Escribir por WhatsApp"
   },
   "chat": {
     "title": "Asistente de Luis",
-    "subtitle": "Consultas rapidas sobre experiencia, servicios y disponibilidad",
+    "subtitle": "Consultas rápidas sobre experiencia, servicios y disponibilidad",
     "placeholder": "Haz una pregunta sobre Luis",
     "send": "Enviar",
     "thinking": "Escribiendo...",
-    "welcome": "Soy el asistente del portfolio de Luis Guzman. Puedo ayudarte con servicios, experiencia, metodologia y tarifas.",
+    "welcome": "Soy el asistente del portfolio de Luis Guzmán. Puedo ayudarte con servicios, experiencia, metodología y tarifas.",
     "error": "No pude responder en este momento. Intenta de nuevo o escribe directamente a Luis.",
     "suggestedLabel": "Preguntas sugeridas",
     "suggestedQuestions": [
-      "Que tipo de plantas atiende Luis?",
-      "Cual es su experiencia en mantenimiento?",
-      "Como trabaja una visita tecnica?",
-      "Cuales son sus tarifas?"
+      "¿Qué tipo de plantas atiende Luis?",
+      "¿Cuál es su experiencia en mantenimiento?",
+      "¿Cómo trabaja una visita técnica?",
+      "¿Cuáles son sus tarifas?"
     ]
   },
   "footer": {
-    "tagline": "Consultor Tecnico Senior para la industria de envases metalicos",
+    "tagline": "Consultor Técnico Senior para la industria de envases metálicos",
     "rights": "Todos los derechos reservados.",
-    "navigation": "Navegacion",
+    "navigation": "Navegación",
     "connect": "Contacto"
   }
 }

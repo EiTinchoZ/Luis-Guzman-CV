@@ -5,19 +5,19 @@ export const runtime = 'edge';
 
 const copy = {
   es: {
-    title: 'Luis Guzman',
-    subtitle: 'Consultor tecnico senior para metal packaging en LATAM',
-    chips: ['27+ anos', 'Mantenimiento', 'Diagnostico', 'Tooling'],
+    title: 'Luis Guzm\u00e1n',
+    subtitle: 'Consultor t\u00e9cnico senior para metal packaging en LATAM',
+    chips: ['27+ a\u00f1os', 'Mantenimiento', 'Diagn\u00f3stico', 'Tooling'],
   },
   en: {
-    title: 'Luis Guzman',
+    title: 'Luis Guzm\u00e1n',
     subtitle: 'Senior technical consultant for metal packaging in LATAM',
     chips: ['27+ years', 'Maintenance', 'Diagnostics', 'Tooling'],
   },
   pt: {
-    title: 'Luis Guzman',
-    subtitle: 'Consultor tecnico senior para metal packaging na LATAM',
-    chips: ['27+ anos', 'Manutencao', 'Diagnostico', 'Ferramentas'],
+    title: 'Luis Guzm\u00e1n',
+    subtitle: 'Consultor t\u00e9cnico senior para metal packaging na LATAM',
+    chips: ['27+ anos', 'Manuten\u00e7\u00e3o', 'Diagn\u00f3stico', 'Ferramentas'],
   },
 } as const;
 
@@ -36,8 +36,8 @@ export function GET(request: NextRequest) {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
-          background: '#050505',
-          color: '#ffffff',
+          background: '#0a0f15',
+          color: '#f5efe2',
           padding: '56px 64px',
           fontFamily: 'system-ui, sans-serif',
           position: 'relative',
@@ -80,10 +80,10 @@ export function GET(request: NextRequest) {
             </div>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
               <span style={{ color: '#c9a020', fontSize: '18px', fontWeight: 700 }}>
-                Luis Guzman Portfolio
+                Luis Guzm\u00e1n Portfolio
               </span>
               <span style={{ color: 'rgba(255,255,255,0.55)', fontSize: '16px' }}>
-                Panama City, Panama
+                Ciudad de Panam\u00e1, Panam\u00e1
               </span>
             </div>
           </div>
@@ -142,7 +142,7 @@ export function GET(request: NextRequest) {
             fontSize: '18px',
           }}
         >
-          <span>Metal packaging | Plant support | LATAM coverage</span>
+          <span>Metal packaging | Plant support | Cobertura LATAM</span>
           <span style={{ color: '#c9a020' }}>luiseudoro@gmail.com</span>
         </div>
       </div>
