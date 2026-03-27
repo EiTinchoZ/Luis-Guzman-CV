@@ -88,7 +88,7 @@ export function Hero() {
             className="mb-3 text-6xl leading-[0.84] tracking-tight text-white sm:text-7xl lg:text-[6.8rem]"
             style={{ fontFamily: 'var(--font-instrument), serif', fontStyle: 'italic' }}
           >
-            Luis Guzm\u00e1n
+            {'Luis Guzm\u00e1n'}
           </motion.h1>
 
           <motion.p
@@ -166,13 +166,13 @@ export function Hero() {
             className="mt-4 text-3xl leading-tight text-white"
             style={{ fontFamily: 'var(--font-instrument), serif', fontStyle: 'italic' }}
           >
-            Soporte t\u00e9cnico con criterio operativo real.
+            {'Soporte t\u00e9cnico con criterio operativo real.'}
           </h2>
           <p
             className="mt-4 text-sm leading-relaxed text-white/70"
             style={{ fontFamily: 'var(--font-jakarta), sans-serif' }}
           >
-            Enfoque senior para diagn\u00f3stico, herramientas de precisi\u00f3n, mantenimiento y acompa\u00f1amiento en planta para operaciones de metal packaging en LATAM.
+            {'Enfoque senior para diagn\u00f3stico, herramientas de precisi\u00f3n, mantenimiento y acompa\u00f1amiento en planta para operaciones de metal packaging en LATAM.'}
           </p>
 
           <div className="mt-6 space-y-3">

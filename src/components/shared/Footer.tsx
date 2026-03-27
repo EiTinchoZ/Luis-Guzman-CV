@@ -42,7 +42,7 @@ export function Footer() {
                 fontStyle: 'italic',
               }}
             >
-              Luis Guzm\u00e1n
+              {'Luis Guzm\u00e1n'}
             </p>
             <p
               className="mt-1 text-xs uppercase tracking-widest"
